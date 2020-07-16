@@ -1,0 +1,5 @@
+# change all of the below variables
+POSTGRES_PASSWORD=a_good_password
+DJANGO_DEBUG=False
+LOCAL_VOLUME=local_dir/to_save_data/in
+DJANGO_SECRET_KEY=a_secret_key
