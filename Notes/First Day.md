@@ -48,3 +48,4 @@ Context is a type of dictionary.
 
 ## EveryCheese Project
 
+"~update" naming convention: convention that prevents people from creating a username like "update"

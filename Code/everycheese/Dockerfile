@@ -19,9 +19,7 @@ RUN apt-get update \
 # Set work directory
 WORKDIR /code
 
-# Requirements are installed here to ensure they will be cached.
-COPY ./requirements /requirements
-RUN pip install -r /requirements/local.txt
-
 # Copy project
 COPY . /code/
+
+RUN pip install -r requirements.txt
