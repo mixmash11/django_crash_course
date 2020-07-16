@@ -51,3 +51,6 @@ Context is a type of dictionary.
 "~update" naming convention: convention that prevents people from creating a username like "update"
 
 Use the tag references in templates if you're having formatting errors. Don't reinvent the wheel with the templates.
+
+If you're having performance issues, it's super likely due to DB queries
+
