@@ -5,10 +5,9 @@ services:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     environment:
-      - DJANGO_READ_DOT_ENV_FILE=False
-      - DJANGO_SECRET_KEY=dev=_rhce4nxh=h=&n=74jlsfw_sfg6-ks2xgovijjo%(7f&&#4@jjh
-      - DATABASE_URL=postgres://postgres:pg_password@db/everycheese
-      - DJANGO_DEBUG=True
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DATABASE_URL=postgres://postgres:${POSTGRES_PASSWORD}@db/everycheese
+      - DJANGO_DEBUG=${DJANGO_DEBUG}
     volumes:
       - .:/code
     ports:
@@ -21,7 +20,7 @@ services:
     ports:
       - 5433:5432
     environment:
-      POSTGRES_PASSWORD: pg_password
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: everycheese
     volumes:
-      - /home/mixmash11/Courses/Django_Crash_Course/PG_Volume:/var/lib/postgresql/data
+      - ${LOCAL_VOLUME}:/var/lib/postgresql/data
