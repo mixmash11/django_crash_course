@@ -117,3 +117,6 @@ GitHub.sublime-settings
 
 # Postgres Data #
 PG_Volume/
+
+# Conda Environments #
+Conda/
