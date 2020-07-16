@@ -1,0 +1,1 @@
+Notes and code from a live version of the Django Crash Course
