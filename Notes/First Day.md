@@ -54,3 +54,4 @@ Use the tag references in templates if you're having formatting errors. Don't re
 
 If you're having performance issues, it's super likely due to DB queries
 
+Make tests as simple and as stupid as possible
