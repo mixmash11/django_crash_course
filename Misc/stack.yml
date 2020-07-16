@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+    - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: pg_password
+#      POSTGRES_DB: db_name
+    volumes:
+    - /home/mixmash11/Courses/Django_Crash_Course/PG_Volume:/var/lib/postgresql/data
