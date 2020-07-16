@@ -55,3 +55,10 @@ Use the tag references in templates if you're having formatting errors. Don't re
 If you're having performance issues, it's super likely due to DB queries
 
 Make tests as simple and as stupid as possible
+
+Squash migrations before going to production
+
+Sometimes the test DB isn't erased at the end of testing. If a test refuses to fix or a field isn't present, try
+ checking that.
+ 
+ Play the test coverage game.
