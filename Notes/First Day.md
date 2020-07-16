@@ -49,3 +49,5 @@ Context is a type of dictionary.
 ## EveryCheese Project
 
 "~update" naming convention: convention that prevents people from creating a username like "update"
+
+Use the tag references in templates if you're having formatting errors. Don't reinvent the wheel with the templates.
