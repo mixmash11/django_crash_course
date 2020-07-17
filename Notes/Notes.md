@@ -103,3 +103,6 @@ you can't add tests or doc strings
 Dont use fixtures for creating testing data
 You will have to go back and fix things
 Try to always use Factories
+
+Never ever remove the csrf token
+
