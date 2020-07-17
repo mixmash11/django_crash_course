@@ -91,7 +91,11 @@ provides safe and intelligent defaults
 
 use #TODO to find todos
 
-### Model/Template Note
+*Model/Template Note*
 
 for any choice field FOO we could do cheese.get_FOO_display
 <p>Firmness: {{ cheese.get_firmness_display }}</p>
+Documentation: https://docs.djangoproject.com/en/3.0/ref/models/instances/#django.db.models.Model.get_FOO_display
+
+Dont use lambdas, at all (preference)
+you can't add tests or doc strings
