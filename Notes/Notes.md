@@ -117,3 +117,4 @@ Seminar on Aug 14
 TSD-AUGUST
 https://events.eventzilla.net/e/django-best-practices-the-two-scoops-way-2138797976
 
+There are two emotions in coding, joy because you can do anything and despair because you can't do anything.
