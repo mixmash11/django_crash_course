@@ -106,3 +106,6 @@ Try to always use Factories
 
 Never ever remove the csrf token
 
+Do commits frequently
+
+LoginRequiredMixin always first, even before the view its abstracting from
