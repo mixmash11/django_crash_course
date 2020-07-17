@@ -118,3 +118,9 @@ TSD-AUGUST
 https://events.eventzilla.net/e/django-best-practices-the-two-scoops-way-2138797976
 
 There are two emotions in coding, joy because you can do anything and despair because you can't do anything.
+
+Imagine you're testing as a user
+Imagine a bug, test for failure and working
+
+Imagine only people with J can insert records, test that it fails on insert
+

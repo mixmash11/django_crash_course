@@ -21,7 +21,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Notes" />
       <excludeFolder url="file://$MODULE_DIR$/PG_Volume" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (Django_Crash_Course) (2)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.8.2 Docker Compose (web at [/home/mixmash11/Courses/Django_Crash_Course/Code/everycheese/docker-compose.dev.yml])" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
