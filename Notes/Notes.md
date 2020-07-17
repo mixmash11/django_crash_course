@@ -86,3 +86,12 @@ use Django Braces for extra CBV functionality
 
 by using urls in templates, you can keep functionality even if the "displayed" text changes (i.e. language)
 
+DRF - as a project grows in complexity, using DRF gets harder and harder, edge cases can get in your way
+provides safe and intelligent defaults
+
+use #TODO to find todos
+
+### Model/Template Note
+
+for any choice field FOO we could do cheese.get_FOO_display
+<p>Firmness: {{ cheese.get_firmness_display }}</p>
