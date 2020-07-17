@@ -99,3 +99,7 @@ Documentation: https://docs.djangoproject.com/en/3.0/ref/models/instances/#djang
 
 Dont use lambdas, at all (preference)
 you can't add tests or doc strings
+
+Dont use fixtures for creating testing data
+You will have to go back and fix things
+Try to always use Factories
