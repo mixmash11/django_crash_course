@@ -112,3 +112,8 @@ LoginRequiredMixin always first, even before the view its abstracting from
 
 Mixins should NOT inherit View Classes (ie CreateView)
 Keep mixins super shallow, they only do one thing
+
+Seminar on Aug 14
+TSD-AUGUST
+https://events.eventzilla.net/e/django-best-practices-the-two-scoops-way-2138797976
+
