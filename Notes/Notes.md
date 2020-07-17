@@ -109,3 +109,6 @@ Never ever remove the csrf token
 Do commits frequently
 
 LoginRequiredMixin always first, even before the view its abstracting from
+
+Mixins should NOT inherit View Classes (ie CreateView)
+Keep mixins super shallow, they only do one thing
