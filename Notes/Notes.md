@@ -1,13 +1,11 @@
 # Django Crash Course
 
-## First Day Notes
-
-### Why Django
+## Why Django
 Django is boring (mature)
 
 Type out the code examples - build up the muscle memory!
 
-### Hello World Project
+## Hello World Project
 
 If you're messing with manage.py, you're over-engineering your project.
 
@@ -19,7 +17,7 @@ Django admin is the only place that tracks stuff, everything else is untracked i
 
 Fixtures should not be used for serialization, use factory boy instead.
 
-#### Homepage App
+### Homepage App
 
 apps.py will help with configuration.
 
@@ -30,18 +28,18 @@ Create the view, then the template. Prevents you from creating orphan templates.
 
 Templates are INTENTIONALLY stupid.
 
-##### apps.py
+#### apps.py
 When we need to use signals (similar to db triggers), we use the name for configuration
 Think of it as referencing for globals
 Should be scaffolding we don't touch
 
-###### Variables in templates
+##### Variables in templates
 
 You can insert variables or methods 
 If method, don't use () if method, call from view.{method_name}
 View object is always passed in with context_data
 
-##### Context Data
+#### Context Data
 
 Context data is inherited by the view.
 Context is a type of dictionary.
@@ -61,4 +59,9 @@ Squash migrations before going to production
 Sometimes the test DB isn't erased at the end of testing. If a test refuses to fix or a field isn't present, try
  checking that.
  
- Play the test coverage game.
+Play the test coverage game.
+ 
+You can use Django with FastAPI
+ 
+### Class Based Views
+

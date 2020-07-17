@@ -15,7 +15,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Code/everycheese" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Code/hellodjango" />
       <excludeFolder url="file://$MODULE_DIR$/Conda" />
+      <excludeFolder url="file://$MODULE_DIR$/Misc" />
+      <excludeFolder url="file://$MODULE_DIR$/Notes" />
       <excludeFolder url="file://$MODULE_DIR$/PG_Volume" />
     </content>
     <orderEntry type="jdk" jdkName="Remote Python 3.8.2 Docker Compose (web at [/home/mixmash11/Courses/Django_Crash_Course/Code/everycheese/docker-compose.dev.yml])" jdkType="Python SDK" />
