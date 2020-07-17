@@ -61,7 +61,28 @@ Sometimes the test DB isn't erased at the end of testing. If a test refuses to f
  
 Play the test coverage game.
  
-You can use Django with FastAPI
+You can use Django with FastAPI.
+
+DRF is required for a career position in Django
+
+HTTP methods are common interview question
  
 ### Class Based Views
+
+In a class, get, post, delete are keywords for HTML request types
+You send mail to the "post" office
+
+FBVs aren't standardized in any way. CBVs force a standard.
+
+Stay verbose for CBVs, for example with the mixins
+
+Automatically return HTTP Status 405 errors for HTTP methods not handled
+
+Try to stick with CBV defaults
+
+request.GET and request.POST items are dicts sent by user
+
+use Django Braces for extra CBV functionality
+
+by using urls in templates, you can keep functionality even if the "displayed" text changes (i.e. language)
 
