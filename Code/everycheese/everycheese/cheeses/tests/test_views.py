@@ -8,7 +8,7 @@ from django.test import RequestFactory
 from everycheese.users.models import User
 from ..models import Cheese
 from ..views import CheeseCreateView, CheeseListView, CheeseDetailView
-from .factories import CheeseFactory
+from .factories import CheeseFactory, cheese
 
 from everycheese.users.tests.factories import UserFactory
 
@@ -44,9 +44,8 @@ def test_good_cheese_list_view(rf):
     assertContains(response, "Cheese List")
 
 
-def test_good_cheese_detail_view(rf):
-    # Order some cheese from the CheeseFactory
-    cheese = CheeseFactory()
+def test_good_cheese_detail_view(rf, cheese):
+
     # Make a request for our new cheese
     url = reverse("cheeses:detail", kwargs={"slug": cheese.slug})
     request = rf.get(url)
@@ -114,3 +113,30 @@ def test_cheese_create_form_valid(client, user):
     assert cheese.description == "A salty hard cheese"
     assert cheese.firmness == Cheese.Firmness.HARD
     assert cheese.creator == user
+
+
+def test_cheese_create_correct_title(client, user):
+    client.force_login(user)
+    response = client.get(reverse("cheeses:add"))
+    assertContains(response, "Add Cheese")
+
+
+def test_good_cheese_update_view(client, user, cheese):
+    client.force_login(user)
+    url = reverse("cheeses:update", kwargs={"slug": cheese.slug})
+    response = client.get(url)
+    assertContains(response, "Update Cheese")
+
+
+def test_cheese_update(client, user, cheese):
+    client.force_login(user)
+    form_data = {
+        "name": cheese.name,
+        "description": "Something new",
+        "firmness": cheese.firmness,
+    }
+    url = reverse("cheeses:update", kwargs={"slug": cheese.slug})
+    response = client.post(url, form_data)
+
+    cheese.refresh_from_db()
+    assert cheese.description == "Something new"
